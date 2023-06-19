@@ -1,0 +1,15 @@
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+/* My CSS */
+body {
+  background-color: #ff4e4e;
+  text-align: center;
+}
+
+.container {
+  background-color: #0681b1;
+  border-radius: 10px;
+  padding: 1rem 0;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Tugas Pertemuan 11</title>
+
+    <!-- jquery -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  </head>
+  <body>
+    <div data-role="page" id="page1">
+      <!-- header -->
+      <div data-role="header">
+        <h1>Phonegap User Interface</h1>
+      </div>
+
+      <div id="result"></div>
+
+      <!-- main -->
+      <div data-role="page" class="ui-content">
+        <a href="page2.html#page2">
+          <button>Click Here</button>
+        </a>
+      </div>
+
+      <!-- footer -->
+      <div data-role="footer" id="footer">
+        <h2>JavaTpoint</h2>
+      </div>
+    </div>
+
+    <script src="cordova.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

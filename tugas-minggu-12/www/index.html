@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Local Storage Object Sample</title>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.js" integrity="sha256-1PYCpx/EXA36KN1NKrK7auaTylVyk01D98R7Ccf04Bc=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Tugas mulai dari sini -->
+    <div class="container" id="container">
+      <label for="crick">Favorit Cricketer</label>
+      <input type="text" id="crick" />
+      <button id="btnSave">Save Cricketer</button>
+
+      <div class="result" id="result">
+        <button id="btnRetrieve">Retrieve Cricketer</button>
+      </div>
+    </div>
+
+    <!-- JS Mulai dari sini -->
+    <script>
+      window.onload = function () {
+        document.getElementById("btnSave").addEventListener("click", storeData);
+        document.getElementById("btnRetrieve").addEventListener("click", getData);
+      };
+
+      function storeData(e) {
+        var cricketer = document.getElementById("crick").value;
+        localStorage.setItem("Favorite Cricketer", cricketer);
+
+        var date = new Date();
+        localStorage.setItem("TimeStamp", date);
+      }
+
+      function getData(e) {
+        var click = localStorage.getItem("Favorite Cricketer");
+        document.getElementById("result").innerHTML = crick;
+      }
+    </script>
+    <!-- Akhir JS -->
+    <script src="cordova.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
